@@ -24,4 +24,9 @@ public class LandOwner {
         }
         return totalArea;
     }
+    
+    public double calculateTotalTax() {
+        double totalArea = calculateTotalArea();
+        return totalArea * 0.01;
+    }
 }
