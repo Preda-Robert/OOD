@@ -63,3 +63,15 @@ class Trapezoid extends Plot {
         return 0.5 * (base1 + base2) * height;
     }
 }
+
+class Circle extends Plot {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public double area() {
+        return Math.PI * radius * radius;
+    }
+}
